@@ -2,9 +2,9 @@
           Colors
 */
 :root {
-  --primary: #eb2f64;
-  --primary-light: #fd6188;
-  --primary-dark: #b81b54;
+  --primary: #eb9a2f;
+  --primary-light: #fd9a61;
+  --primary-dark: #b86f1b;
   --grayLight1: #faf9f9;
   --grayLight2: #e0dede;
   --grayLight3: #d8d7d7;
@@ -13,6 +13,7 @@
   --grayDark2: #777;
   --grayDark3: #999;
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.4);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .25);
 }
 
 * {
@@ -95,7 +96,34 @@ body {
 
 .hotel-view {
   background-color: #fff;
-  height: 80rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--grayLight1);
+  border-bottom: 1px solid var(--grayLight2);
+}
+
+.description {
+  background-color: greenyellow;
+  font-size: 1.4rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+  padding: 3rem;
+  margin-right: 4.5rem;
+  -webkit-box-shadow: var(--shadow-light);
+          box-shadow: var(--shadow-light);
+}
+
+.user-reviews {
+  background-color: orange;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;

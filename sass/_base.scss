@@ -18,9 +18,13 @@
 // $grayDark3: #999;
 
 :root {
-  --primary: #eb2f64;
-  --primary-light: #fd6188;
-  --primary-dark: #b81b54;
+  // --primary: #eb2f64;
+  // --primary-light: #fd6188;
+  // --primary-dark: #b81b54;
+
+  --primary: #eb9a2f;
+  --primary-light: #fd9a61;
+  --primary-dark: #b86f1b;
 
   --grayLight1: #faf9f9;
   --grayLight2: #e0dede;
@@ -32,6 +36,7 @@
   --grayDark3: #999;
 
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.4);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .25);
 }
 
 * {
