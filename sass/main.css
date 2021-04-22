@@ -7,7 +7,7 @@
   --primary-dark: #b86f1b;
   --grayLight1: #faf9f9;
   --grayLight2: #e0dede;
-  --grayLight3: #d8d7d7;
+  --grayLight3: #c2c0c0;
   --grayLight4: rgb(199, 196, 196);
   --grayDark1: #333;
   --grayDark2: #777;
@@ -111,7 +111,6 @@ body {
 }
 
 .description {
-  background-color: greenyellow;
   font-size: 1.4rem;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 60%;
@@ -123,7 +122,6 @@ body {
 }
 
 .user-reviews {
-  background-color: orange;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -440,6 +438,70 @@ body {
   outline: none;
   -webkit-animation: pulsate 1s infinite;
           animation: pulsate 1s infinite;
+}
+
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+.list {
+  list-style: none;
+  margin: 3rem 0;
+  padding: 3rem;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.list__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  margin-bottom: .7rem;
+}
+
+.list__item::before {
+  content: "";
+  display: inline-block;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: .7rem;
+  background-color: var(--primary);
+  -webkit-mask-image: url("../img/svg/SVG/chevron-thin-right.svg");
+          mask-image: url("../img/svg/SVG/chevron-thin-right.svg");
+  -webkit-mask-size: cover;
+          mask-size: cover;
+}
+
+.recommend {
+  font-size: 1.3rem;
+  color: var(--grayDark1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.recommend__photo {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.recommend__photo:not(:last-child) {
+  margin-right: -1.5rem;
 }
 
 @-webkit-keyframes pulsate {

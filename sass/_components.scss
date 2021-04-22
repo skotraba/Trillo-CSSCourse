@@ -283,6 +283,81 @@
   }
 }
 
+//Paragraph
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+//List
+.list {
+  list-style: none;
+  margin: 3rem 0;
+  padding: 3rem;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    flex: 0 0 50%;
+    margin-bottom: .7rem;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      height: 1.5rem;
+      width: 1.5rem;
+      margin-right: .7rem;
+
+       //Older Browsers
+      //  background-image: url('../img/svg/SVG/chevron-thin-right.svg');
+      //  background-size: cover;
+
+       //New Browsers - masks
+       background-color: var(--primary);
+      //  -webkit-mask-image: url('../img/svg/SVG/chevron-thin-right.svg');
+      //  -webkit-mask-size: cover;
+       mask-image: url('../img/svg/SVG/chevron-thin-right.svg');
+       mask-size: cover;
+
+
+    }
+  }
+}
+
+//Recommend
+.recommend {
+  font-size: 1.3rem;
+  color: var(--grayDark1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__count {
+  }
+
+  &__friends {
+
+  }
+
+  &__photo {
+    box-sizing: content-box;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 3px solid white;
+
+    &:not(:last-child) {
+      margin-right: -1.5rem;
+    }
+  }
+}
+
+
+
+//Animations
+
 @keyframes pulsate {
   0% {
     transform: scale(1);
