@@ -1,0 +1,63 @@
+
+
+/*
+          Colors
+*/
+
+// $primary: #eb2f64;
+// $primary-light: #ff3366;
+// $primary-dark: #ba265d;
+
+// $grayLight1: #faf9f9;
+// $grayLight2: #f4f2f2;
+// $grayLight3: #f0eeee;
+// $grayLight4: #ccc;
+
+// $grayDark1: #333;
+// $grayDark2: #777;
+// $grayDark3: #999;
+
+:root {
+  --primary: #eb2f64;
+  --primary-light: #fd6188;
+  --primary-dark: #b81b54;
+
+  --grayLight1: #faf9f9;
+  --grayLight2: #e0dede;
+  --grayLight3: #d8d7d7;
+  --grayLight4: rgb(199, 196, 196);
+
+  --grayDark1: #333;
+  --grayDark2: #777;
+  --grayDark3: #999;
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.4);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-image: linear-gradient(to right bottom, var(--primary-light), var(--primary-dark));
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--grayDark2);
+  
+  min-height: 100vh;
+}
